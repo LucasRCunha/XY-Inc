@@ -1,27 +1,20 @@
-package com.lucascunha.dev;
+package com.lucascunha.dev.services;
 
+import java.text.ParseException;
 import java.util.Arrays;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.CommandLineRunner;
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import com.lucascunha.dev.domain.Poi;
 import com.lucascunha.dev.repositories.PoiRepository;
 
-@SpringBootApplication
-public class XyIncApplication implements CommandLineRunner {
+public class DbService {
 
+	
 	@Autowired
 	private PoiRepository poiReposioty;
 	
-	public static void main(String[] args) {
-		SpringApplication.run(XyIncApplication.class, args);
-	}
-
-	@Override
-	public void run(String... arg0) throws Exception {
+	public void instantiateTestDataBase() throws ParseException {
 		Poi p1= new Poi(null,"Lanchonete",27,12);
 		Poi p2= new Poi(null,"Posto",31,18);
 		Poi p3= new Poi(null,"Joalheria",15,12);
@@ -31,5 +24,6 @@ public class XyIncApplication implements CommandLineRunner {
 		Poi p7= new Poi(null,"Churrascaria",28,2);
 		
 		poiReposioty.save(Arrays.asList(p1,p2,p3,p4,p5,p6,p7));
+
 	}
 }
