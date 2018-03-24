@@ -14,6 +14,8 @@ Ex:
 Serviço para listar todos os POIs cadastrados = serviço está disponivel pela URL https://xy-inc-lucas.herokuapp.com/poi através de uma requisição GET, onde serão mostrados todos os POI's cadastrados
 
 Serviço para listar POIs por proximidade = serviço está disponivel pela URL https://xy-inc-lucas.herokuapp.com/poi/next?x=A&y=B&distance=C, onde A é o valor da coordenada X, B é o valor da coordenda Y e C é o valor da distancia maxima.
+Ex:
+https://xy-inc-lucas.herokuapp.com/poi/next?x=20&y=10&distance=10
 
 A aplicação também pode ser executada para testes locais. Basta fazer o download e rodar a aplicação, que ja esta configurada para testes.
 
