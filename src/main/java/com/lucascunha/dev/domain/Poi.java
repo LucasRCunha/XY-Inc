@@ -25,6 +25,7 @@ public class Poi implements Serializable{
 	private Integer coordenada_y;
 	
 	public Poi() {
+		
 	}
 
 	public Poi(Integer id, String nome, Integer coordenada_x, Integer coordenada_y) {
