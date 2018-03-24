@@ -1,6 +1,6 @@
 # XY-Inc
 
-A aplicação XY-Inc foi desenvolvida em Java juntamente utilizando o framework Spring Boot.
+A aplicação XY-Inc foi desenvolvida em Java juntamente com o framework Spring Boot.
 
 Ela possui 3 serviços:
 Serviço para cadastrar pontos de interesse com 3 atributos = serviço está disponivel pela URL https://xy-inc-lucas.herokuapp.com/poi através de uma requisição POST passando com parametros de entrada nome do POI, coordenada X e coordenada Y.
