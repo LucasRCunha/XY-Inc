@@ -4,10 +4,12 @@ import java.text.ParseException;
 import java.util.Arrays;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.lucascunha.dev.domain.Poi;
 import com.lucascunha.dev.repositories.PoiRepository;
 
+@Service
 public class DbService {
 
 	
